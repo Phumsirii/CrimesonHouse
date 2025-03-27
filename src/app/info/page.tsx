@@ -22,7 +22,15 @@ export default function InfoPage() {
               HOUSE
             </div>
           </div>
-          <div className="text-xl lg:text-2xl">This is a description</div>
+          <div className="text-xl lg:text-2xl">
+            The Aurora Echo-9 is a state-of-the-art drone designed for
+            high-altitude exploration and environmental monitoring. Equipped
+            with an advanced AI-driven navigation system, it can autonomously
+            map terrain, analyze atmospheric conditions, and capture ultra-HD
+            imagery in extreme weather. Its lightweight carbon-fiber frame
+            ensures durability while maintaining agility, and the built-in solar
+            recharge system allows for extended flight times.
+          </div>
         </div>
       </div>
     </div>
