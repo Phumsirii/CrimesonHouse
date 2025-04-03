@@ -13,80 +13,63 @@ export default function TopBar() {
         />
       </div>
 
-      <ul className="flex space-x-8">
+      <ul className="flex justify-center space-x-8">
         <li>
           <Link
             href="/"
-            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors text-center"
           >
-            Home
+            <div>Home</div>
           </Link>
         </li>
         <li>
           <Link
             href="/introduction"
-            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors text-center"
           >
-            Introduction
+            <div>Introduction</div>
           </Link>
         </li>
         <li>
           <Link
             href="/tickets"
-            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors text-center"
           >
-            Ticket
+            <div>Ticket</div>
           </Link>
         </li>
         <li>
           <Link
             href="/story"
-            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors text-center"
           >
-            Story Behind Our Project
+            <div>Story Behind Our Project</div>
           </Link>
         </li>
         <li>
           <Link
             href="/contact"
-            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors text-center"
           >
-            Contact Us
+            <div>Contact Us</div>
           </Link>
         </li>
         <li>
           <Link
             href="/sponsorship"
-            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors text-center"
           >
-            Special Thanks
+            <div>Special Thanks</div>
           </Link>
         </li>
       </ul>
 
       <Link
         href="/tickets"
-        className="bg-amber-700 hover:bg-amber-600 text-black font-bold py-2 px-4 rounded uppercase text-sm tracking-wider transition-colors"
+        className="bg-amber-700 hover:bg-amber-600 text-black font-bold py-2 px-4 rounded uppercase text-sm tracking-wider transition-colors text-center"
       >
-        Book Now
+        <div>Book Now</div>
       </Link>
-
-      <button className="md:hidden text-white">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
-      </button>
     </div>
   );
 }
