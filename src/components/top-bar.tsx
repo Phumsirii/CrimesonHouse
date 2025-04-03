@@ -13,58 +13,56 @@ export default function TopBar() {
         />
       </div>
 
-      <nav className="hidden md:block">
-        <ul className="flex space-x-8">
-          <li>
-            <Link
-              href="/"
-              className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/introduction"
-              className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
-            >
-              Introduction
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/tickets"
-              className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
-            >
-              Ticket
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/story"
-              className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
-            >
-              Story Behind Our Project
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact"
-              className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
-            >
-              Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/sponsorship"
-              className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
-            >
-              Special Thanks
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <ul className="flex space-x-8">
+        <li>
+          <Link
+            href="/"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/introduction"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+          >
+            Introduction
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/tickets"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+          >
+            Ticket
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/story"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+          >
+            Story Behind Our Project
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/contact"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+          >
+            Contact Us
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/sponsorship"
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
+          >
+            Special Thanks
+          </Link>
+        </li>
+      </ul>
 
       <Link
         href="/tickets"
