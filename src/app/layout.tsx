@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopBar from "@/components/top-bar";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +31,20 @@ export default function RootLayout({
         <title>CrimesonHouse</title>
         <link rel="icon" href="/image/LOGO-t-01.png" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} `}>
-        <TopBar />
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <div className="hidden lg:block">
+          <TopBar />
+          {children}
+        </div>
+        <div className="lg:hidden">
+          <SidebarProvider>
+            <AppSidebar />
+            <main>
+              <SidebarTrigger />
+              {children}
+            </main>
+          </SidebarProvider>
+        </div>
       </body>
     </html>
   );
