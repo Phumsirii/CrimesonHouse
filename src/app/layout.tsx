@@ -29,9 +29,7 @@ export default function RootLayout({
         <title>CrimesonHouse</title>
         <link rel="icon" href="/image/LOGO-t-01.png" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} hidden lg:block`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} `}>
         <TopBar />
         {children}
       </body>
