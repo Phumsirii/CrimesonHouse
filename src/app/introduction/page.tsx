@@ -31,22 +31,21 @@ export default function IntroductionPage() {
                         }
   }
   return (
-    <div className="max-h-screen max-w-screen flex flex-col py-50 lg:px-40 md:px-32 sm:px-20 px-4 space-y-4 lg:space-y-10 ">
-    <h1>The Project</h1>
+    <div className="min-h-screen text-[#E8D1A7]  bg-[url('/image/red_bg.jpg')] bg-cover min-w-screen flex flex-col py-50 lg:px-40 md:px-32 sm:px-20 px-4 space-y-4 lg:space-y-10 ">
+    <h1 className="text-3xl">The Project</h1>
     <div>
      Crim(e)son House ไวเคานต์ผู้ล่วงลับ เป็นโปรเจกต์ละครเวทีปริญญานิพนธ์
 ที่สร้างสรรค์ขึ้นโดยกลุ่มนิสิตภาควิชาวาทวิทยาและสื่อสารการแสดง สาขาสื่อสารการแสดง คณะนิเทศศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย
 พวกเราต้องการให้ละครเวทีเรื่องนี้เป็นกระจกสะท้อนสังคม เปิดมุมมองเรื่องการให้โอกาสที่สองแก่กลุ่มผู้ที่เคยกระทำผิดและได้ชดใช้ความผิดแล้ว เพื่อให้พวกเขาได้กลับมาใช้ชีวิตอย่างมีคุณค่า โดยไม่ถูกตีตราหรือแบ่งแยก เพราะเราเชื่อว่าทุกชีวิตสามารถเริ่มต้นใหม่และเป็นส่วนหนึ่งที่ดีของสังคมได้
     </div>
 
-    <h1>Synopsis</h1>
+    <h1 className="text-3xl">Synopsis</h1>
     <div>
     ในช่วงยุค Regency ปี 1816 ณ คฤหาสน์ ‘ตระกูล Crimson’ ตระกูลผู้ดีเก่าแก่ที่ทรงอิธิพลเป็นอันดับต้น ๆ ของกรุงลอนดอน  ได้เกิดเหตุอันน่าเศร้าสลด เมื่อ ไวเคานต์ ‘Rufous Crimson’ ผู้นำของตระกูลถูกพบเป็นศพอยู่ภายในห้องพักส่วนตัว เจ้าหน้าที่ได้ลงความเห็นว่าเป็นการเสียชีวิตโดยธรรมชาติ 
     แต่ทว่า หลังจากเกิดเหตุได้อาทิตย์กว่า ๆ ลูกชายคนกลางของตระกูล อย่าง 'Lord Garnet Crimson' กลับเข้ารับสารภาพว่าตนเองคือฆาตกร และไม่ยอมปริปากอันใดอีกเลย 
     คดีนี้ดันไปสะดุดตา ‘Walter’  เจ้าหน้าที่สืบสวนอาชญากรรมที่มองว่าคดีนี้มีเหตุไม่ชอบมาพากล อีกทั้งครอบครัวที่ดูไม่สนใจใยดี แถมยังถีบส่ง Garnet เข้าคุก เขาจึงเริ่มดำเนินแผนการสืบ ด้วยการใช้งานประมูลของตระกูลที่ถูกจัดขึ้นทุกปี เพื่อให้เหล่าผู้ต้องสงสัยได้มารวมตัวกันโดยไม่อาจหลีกเลี่ยง และนี่คือโอกาสของ Walter ที่จะได้เริ่มเปิดโปงความลับของตระกูล Crimson
     </div>
-
-    <h1>Character</h1>
+    <h1 className="text-3xl">Character</h1>
     <div className="flex flex-wrap gap-3">
   {  Object.entries(characters).map( ([name, decsriptions]) => <Card name={name} key = {name} imageSrc= {`/image/${decsriptions.srcImage}`} description={decsriptions.description}/>) }
     </div>
