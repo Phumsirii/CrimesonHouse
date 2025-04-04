@@ -26,7 +26,7 @@ const navItems = [
   },
   {
     title: "STORY BEHIND OUR PROJECT",
-    url: "/info",
+    url: "/our-story",
   },
   {
     title: "CONTACT US",
@@ -51,7 +51,7 @@ export default function NavSidebar() {
           <SheetTitle></SheetTitle>
           <div className="flex size-full flex-col justify-between">
             <ul className="grid w-full place-items-start gap-2 py-8">
-              {navItems.slice(0, 5).map((item, index) => (
+              {navItems.map((item, index) => (
                 <li
                   key={index}
                   className="w-full place-items-start rounded-sm hover:bg-neutral-200"

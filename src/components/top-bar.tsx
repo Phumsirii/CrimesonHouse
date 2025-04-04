@@ -41,7 +41,7 @@ export default function TopBar() {
         </li>
         <li>
           <Link
-            href="/story"
+            href="/our-story"
             className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors text-center"
           >
             <div>Story Behind Our Project</div>

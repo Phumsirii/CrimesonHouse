@@ -43,7 +43,7 @@ export default function IntroductionPage() {
     },
   };
   return (
-    <div className="max-h-screen max-w-screen flex flex-col py-50 lg:px-40 md:px-32 sm:px-20 px-4 space-y-4 lg:space-y-10 ">
+    <div className="min-h-screen bg-[url('/image/red_bg.jpg')] text-[#E8D1A7] max-w-screen flex flex-col py-50 lg:px-40 md:px-32 sm:px-20 px-4 space-y-4 lg:space-y-10 ">
       <h1>The Project</h1>
       <div>
         Crim(e)son House ไวเคานต์ผู้ล่วงลับ เป็นโปรเจกต์ละครเวทีปริญญานิพนธ์
@@ -74,7 +74,7 @@ export default function IntroductionPage() {
       </div>
 
       <h1>Character</h1>
-      <div className="flex flex-wrap gap-3">
+      <div className="flex flex-wrap gap-3 justify-center">
         {Object.entries(characters).map(([name, decsriptions]) => (
           <Card
             name={name}
@@ -84,7 +84,6 @@ export default function IntroductionPage() {
           />
         ))}
       </div>
-
     </div>
   );
 }
