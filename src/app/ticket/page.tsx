@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 
 export default function Ticket() {
   return (
@@ -29,6 +30,14 @@ export default function Ticket() {
             <div className="text-2xl lg:text-4xl">&#64;CrimesonHouse</div>
           </div>
         </Link>
+
+        <Image
+          src={"/image/line-qr.png"}
+          alt="ticket"
+          width={500}
+          height={500}
+          className="object-cover lg:w-1/2 w-full h-auto"
+        />
       </div>
     </div>
   );
