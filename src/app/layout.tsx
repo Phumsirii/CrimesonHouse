@@ -57,7 +57,8 @@ export default function RootLayout({
               </li>
               <li>
                 <Link
-                  href="/ticket"
+
+                  href="/tickets"
                   className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
                 >
                   Ticket
@@ -73,7 +74,8 @@ export default function RootLayout({
               </li>
               <li>
                 <Link
-                  href="/contact"
+
+                  href="/contact-us"
                   className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors"
                 >
                   Contact Us
@@ -91,7 +93,9 @@ export default function RootLayout({
           </nav>
 
           <Link
-            href="/ticket"
+
+            href="/tickets"
+
             className="bg-amber-700 hover:bg-amber-600 text-black font-bold py-2 px-4 rounded uppercase text-sm tracking-wider transition-colors"
           >
             Book Now
