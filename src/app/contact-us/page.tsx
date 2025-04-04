@@ -8,9 +8,9 @@ export default function ContactUsPage() {
         CONTACT US
       </div>
       <div className="flex flex-row text-xl lg:text-2xl">
-        <div className="flex flex-col space-y-10 lg:space-y-16">
+        <div className="flex flex-col space-y-10 lg:space-y-16 text-white">
           <Link
-            className="flex flex-row space-x-2 lg:space-x-8 items-center"
+            className="flex flex-row space-x-2 lg:space-x-8 bg-black/60 items-center shadow-2xl hover:-translate-y-0.5 delay-100 transform transition-transform duration-200 rounded-2xl p-2"
             href={
               "https://www.instagram.com/crimesonhouse?igsh=d2wzNzNxemVibTBl&utm_source=qr"
             }
@@ -24,7 +24,7 @@ export default function ContactUsPage() {
           </Link>
 
           <Link
-            className="flex flex-row space-x-2 lg:space-x-8 items-center"
+            className="flex flex-row space-x-2 lg:space-x-8 bg-black/60 items-center shadow-2xl hover:-translate-y-0.5 delay-100 transform transition-transform duration-200 rounded-2xl p-2"
             href={
               "https://www.tiktok.com/@crimesonhouse?_t=ZS-8vCfJXlsCQs&_r=1"
             }
@@ -41,7 +41,7 @@ export default function ContactUsPage() {
           </Link>
 
           <Link
-            className="flex flex-row space-x-2 lg:space-x-8 items-center"
+            className="flex flex-row space-x-2 lg:space-x-8 bg-black/60 items-center shadow-2xl hover:-translate-y-0.5 delay-100 transform transition-transform duration-200 rounded-2xl p-2"
             href={"https://lin.ee/Zm0GY3d"}
             target="_blank"
             rel="noopener noreferrer"
