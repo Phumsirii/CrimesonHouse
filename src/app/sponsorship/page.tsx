@@ -42,24 +42,21 @@ export default function SponsorshipPage() {
   return (         
     <div className="bg-[url('/image/BG-red-retouch.png')] bg-cover bg- text-[#E8D1A7] bg-scale-down min-h-screen min-w-screen gap-y-16 flex flex-col py-30 lg:px-40 md:px-32 sm:px-20 px-4 lg:space-y-10 ">
       <div className="sm:text-4xl text-3xl font-bold text-center">
-        Sponsored By
       </div>
-      <div className="flex flex-col items-center justify-center lg:gap-x-16 gap-y-8 relative -mt-20">
-        <div className="flex gap-5">
-              {/* <SponsorBox w = {200} h = {200} title = "Champion Tier" logos = {championSponsors} dir = "Champion"/>
-              <SponsorBox w = {100} h = {100} title = "Platinum Tier" logos = {platinumSponsors} dir = "Platinum"/>
-              <SponsorBox w = {75} h = {75} title = "Silver Tier" logos = {silverSponsors} dir="Silver"/>
-              <SponsorBox w = {50} h = {50} title = "Bronze Tier" logos = {bronzeSponsors} dir="Bronze"/> */}
+      <div className="flex flex-col items-center font-bold sm:text-4xl text-3xl text-center justify-center lg:gap-x-16 gap-y-8 relative -mt-20">
+            Sponsored By
+
+        <div className="flex gap-5 flex-wrap justify-center items-center">
                 {championSponsors.map(logo => <Image alt = "logo" key = {logo} width= {200} height={200} src={`/image/Champion/${logo}`}/>)}
         </div>
-        <div className="flex gap-3 flex-wrap">
+        <div className="flex gap-3 flex-wrap  justify-center items-cente">
                 {otherSponsors.slice(0,5).map(logo => <Image alt = "logo" key = {logo} width= {100} height={100} className="bg-white" src={`/image/others/${logo}`}/>)}
         </div>
-        <div className="flex gap-3 flex-wrap">
+        <div className="flex gap-3 flex-wrap  justify-center items-cente">
                 {otherSponsors.slice(5).map(logo => <Image alt = "logo" key = {logo} width= {100} className="bg-white" height={100} src={`/image/others/${logo}`}/>)}
         </div>
       </div>
-      <div className="fixed bottom-20 left-20 p-2 bg-opacity-50 text-white">
+      <div className="relative bottom-0 left-0 p-2 bg-opacity-50 text-white">
       <p>สนใจสนับสนุนโครงการ สามารถติดต่อได้ที่<br />
           Instagram: @crimesonhouse <br />
           Email: whoisthemurderproject@gmail.com<br />
