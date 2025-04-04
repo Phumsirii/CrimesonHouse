@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import NavSidebar from "./sidebar";
 
 export default function TopBar() {
   return (
-    <div className="hidden bg-black/60 z-15 fixed w-full p-2 h-1/10 lg:flex justify-between items-center">
+    <div className=" bg-black/60 z-15 fixed w-full p-2 h-1/10 flex justify-between items-center">
       <div className="mt-4">
         <Image
           src="/image/LOGO-t-01.png"
@@ -13,7 +14,7 @@ export default function TopBar() {
         />
       </div>
 
-      <ul className="flex justify-center space-x-8">
+      <ul className="lg:flex justify-center space-x-8 hidden">
         <li>
           <Link
             href="/"
@@ -64,12 +65,7 @@ export default function TopBar() {
         </li>
       </ul>
 
-      <Link
-        href="/tickets"
-        className="bg-amber-700 hover:bg-amber-600 text-black font-bold py-2 px-4 rounded uppercase text-sm tracking-wider transition-colors text-center"
-      >
-        <div>Book Now</div>
-      </Link>
+      <NavSidebar />
     </div>
   );
 }
