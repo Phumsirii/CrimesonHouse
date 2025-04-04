@@ -52,14 +52,14 @@ export default function NavSidebar() {
             <Icon icon="mingcute:menu-fill" className="size-4 text-white" />
           </Button>
         </SheetTrigger>
-        <SheetContent>
+        <SheetContent className="bg-[#482E1D] text-white border-none">
           <SheetTitle></SheetTitle>
           <div className="flex size-full flex-col justify-between">
             <ul className="grid w-full place-items-start gap-2 py-8">
               {navItems.map((item, index) => (
                 <li
                   key={index}
-                  className="w-full place-items-start rounded-sm hover:bg-neutral-200"
+                  className="w-full place-items-start rounded-sm hover:-translate-x-0.5"
                   onClick={closeSideBar}
                 >
                   <SidebarButton title={item.title} link={item.url} />
