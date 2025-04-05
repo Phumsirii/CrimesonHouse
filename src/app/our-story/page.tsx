@@ -28,7 +28,7 @@ export default function OurStoryPage() {
 
         <br />
 
-        <h3 className="font-bold underline">เหตุผลหลัก ๆ ที่อาชญากรเลือกกระทำผิดซ้ำ</h3>
+        <h3 className="font-bold">เหตุผลหลัก ๆ ที่อาชญากรเลือกกระทำผิดซ้ำ</h3>
         <ul className="list-disc ml-5 space-y-1">
           <li>ขาดโอกาสในการทำงาน → ไม่มีทางเลือก → กลับไปสู่อาชญากรรม</li>
           <li>

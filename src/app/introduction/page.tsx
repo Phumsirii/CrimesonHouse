@@ -73,8 +73,8 @@ export default function IntroductionPage() {
         และนี่คือโอกาสของ Walter ที่จะได้เริ่มเปิดโปงความลับของตระกูล Crimson
       </div>
 
-      <h1 className="text-2xl lg:text-3xl font-bold tracking-wide">Character</h1>
-      <div className="flex flex-wrap gap-6 justify-center">
+      <h1 className="text-2xl lg:text-3xl font-bold tracking-wide">Characters</h1>
+      <div className="flex flex-wrap gap-10 gap-y-10 justify-center">
         {Object.entries(characters).map(([name, decsriptions]) => (
           <Card
             name={name}

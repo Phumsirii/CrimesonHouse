@@ -1,23 +1,24 @@
 import Link from "next/link";
-
+import Image
+ from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <section className="w-screen bg-cover bg-center h-screen  py-50 lg:h-screen lg:border-none lg:bg-cover lg:bg-[position:20%_40%] bg-[url('/image/GFXP0640.jpg')]">
+      <section className="w-screen bg-cover bg-center h-screen  py-50 lg:h-screen lg:border-none lg:bg-cover lg:bg-[position:20%_32%] bg-[url('/image/GFXP0640.jpg')]">
         <div className="flex flex-col items-center h-full justify-center text-center px- ">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-wider">
-            CRIM(E)SON
-          </h1>
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-wider">
-            HOUSE
-          </h1>
-          <h2 className="text-xl md:text-2xl font-light mb-8 max-w-3xl">
+          <Image alt="title" src="/image/ชื่อเรื่อง.png" width={800} height = {800}/>
+          <h2 className="text-3xl md:text-5xl font-light mb-8 max-w-3xl">
             2-4 May 2025
           </h2>
-          <h3 className="text-xl md:text-2xl font-light mb-8 max-w-3xl">
-            ความจริงทุกอย่าง อยู่ในบ้านหลังนั้น คุณต้องไปพิสูจน์ด้วยตัวคุณเอง
+          <h3 className="md:hidden text-xl sm:text-xl italic font-light mb-8 text-center">
+            <q>ความจริงทุกอย่าง อยู่ในบ้านหลังนั้น <br/>
+            คุณต้องไปพิสูจน์ด้วยตัวคุณเอง</q>
           </h3>
+    
+        <h3 className="hidden md:block text-2xl italic font-light mb-8 text-center">
+          <q>ความจริงทุกอย่าง อยู่ในบ้านหลังนั้น คุณต้องไปพิสูจน์ด้วยตัวคุณเอง</q>
+        </h3>
           <Link
             href="/tickets"
             className="bg-amber-700 hover:bg-amber-600 text-black font-bold py-4 px-8 rounded uppercase text-lg tracking-wider transition-colors"
@@ -30,7 +31,7 @@ export default function Home() {
       {/* Show Info Section */}
       <section className="py-20 bg-[url('/image/BG-red-retouch.png')]">
         <div className="flex flex-col mx-auto items-center px-5">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-amber-700 mb-16 relative after:content-[''] after:absolute after:w-20 after:h-1 after:bg-amber-700 after:bottom-[-15px] after:left-1/2 after:transform after:-translate-x-1/2">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#E8D1A7] mb-16">
             Teaser
           </h2>
           <div className="mx-5 w-full max-w-4xl aspect-video">
