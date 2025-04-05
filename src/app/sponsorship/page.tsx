@@ -56,7 +56,7 @@ export default function SponsorshipPage() {
                 {otherSponsors.slice(5).map(logo => <Image alt = "logo" key = {logo} width= {100} className="bg-white" height={100} src={`/image/others/${logo}`}/>)}
         </div>
       </div>
-      <div className="relative bottom-20 left-0 p-2 bg-opacity-50 text-white">
+      <div className="relative sm:bottom-15 lg:bottom-20 left-0 p-2 bg-opacity-50 text-white">
       <p>สนใจสนับสนุนโครงการ สามารถติดต่อได้ที่<br />
           Instagram: @crimesonhouse <br />
           Email: whoisthemurderproject@gmail.com<br />
