@@ -6,7 +6,7 @@ export default function OurStoryPage() {
   const language = useAppSelector((state) => state.languageSlice.language);
 
   return (
-    <div className="min-h-screen bg-[url('/image/red_bg.jpg')] bg-cover text-[#E8D1A7] max-w-screen flex flex-col py-24 lg:px-40 md:px-32 sm:px-20 px-4 space-y-8 lg:space-y-12">
+    <div className="min-h-screen bg-[url('/image/red_bg.jpg')] bg-cover text-[#E8D1A7] max-w-screen flex flex-col py-35 lg:px-40 md:px-32 sm:px-20 px-4 space-y-8 lg:space-y-12">
       <h1 className="font-bold text-2xl lg:text-3xl">Inclusivity</h1>
       <div>
         <p>
