@@ -1,8 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import NavSidebar from "./sidebar";
+import { Icon } from "@iconify/react";
+import { setLanguage } from "@/redux/features/language";
+import { useDispatch } from "react-redux";
 
 export default function TopBar() {
+  const dispatch = useDispatch();
+
   return (
     <div className=" bg-black/60 z-15 fixed w-full p-2 h-1/10 flex justify-between items-center">
       <div className="mt-4">
@@ -65,7 +72,27 @@ export default function TopBar() {
         </li>
       </ul>
 
-      <NavSidebar />
+      <div className="flex flex-row space-x-4 items-center">
+        <Icon
+          icon={"emojione:flag-for-united-kingdom"}
+          className="size-10"
+          onClick={() => {
+            dispatch(setLanguage("EN"));
+            console.log("EN");
+          }}
+        />
+
+        <Icon
+          icon={"emojione:flag-for-thailand"}
+          className="size-10"
+          onClick={() => {
+            dispatch(setLanguage("TH"));
+            console.log("TH");
+          }}
+        />
+
+        <NavSidebar />
+      </div>
     </div>
   );
 }
