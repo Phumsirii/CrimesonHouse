@@ -49,7 +49,7 @@ export default function TopBar() {
         </li>
         <li>
           <Link
-            href="/contact"
+            href="/contact-us"
             className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors text-center"
           >
             <div>Contact Us</div>

@@ -43,9 +43,9 @@ export default function IntroductionPage() {
     },
   };
   return (
-    <div className="min-h-screen bg-[url('/image/red_bg.jpg')] text-[#E8D1A7] max-w-screen flex flex-col py-50 lg:px-40 md:px-32 sm:px-20 px-4 space-y-4 lg:space-y-10 ">
-      <h1>The Project</h1>
-      <div>
+    <div className="min-h-screen bg-[url('/image/red_bg.jpg')] bg-cover text-[#E8D1A7] max-w-screen flex flex-col py-24 lg:px-40 md:px-32 sm:px-20 px-4 space-y-8 lg:space-y-12">
+      <h1 className="text-2xl lg:text-3xl font-bold tracking-wide">The Project</h1>
+      <div className="text-base lg:text-lg leading-relaxed">
         Crim(e)son House ไวเคานต์ผู้ล่วงลับ เป็นโปรเจกต์ละครเวทีปริญญานิพนธ์
         ที่สร้างสรรค์ขึ้นโดยกลุ่มนิสิตภาควิชาวาทวิทยาและสื่อสารการแสดง
         สาขาสื่อสารการแสดง คณะนิเทศศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย
@@ -55,8 +55,8 @@ export default function IntroductionPage() {
         เพราะเราเชื่อว่าทุกชีวิตสามารถเริ่มต้นใหม่และเป็นส่วนหนึ่งที่ดีของสังคมได้
       </div>
 
-      <h1>Synopsis</h1>
-      <div>
+      <h1 className="text-2xl lg:text-3xl font-bold tracking-wide">Synopsis</h1>
+      <div className="text-base lg:text-lg leading-relaxed">
         ในช่วงยุค Regency ปี 1816 ณ คฤหาสน์ &#39;ตระกูล Crimson&#39;
         ตระกูลผู้ดีเก่าแก่ที่ทรงอิธิพลเป็นอันดับต้น ๆ ของกรุงลอนดอน
         ได้เกิดเหตุอันน่าเศร้าสลด เมื่อ ไวเคานต์ &#39;Rufous Crimson&#39;
@@ -73,8 +73,8 @@ export default function IntroductionPage() {
         และนี่คือโอกาสของ Walter ที่จะได้เริ่มเปิดโปงความลับของตระกูล Crimson
       </div>
 
-      <h1>Character</h1>
-      <div className="flex flex-wrap gap-3 justify-center">
+      <h1 className="text-2xl lg:text-3xl font-bold tracking-wide">Character</h1>
+      <div className="flex flex-wrap gap-6 justify-center">
         {Object.entries(characters).map(([name, decsriptions]) => (
           <Card
             name={name}

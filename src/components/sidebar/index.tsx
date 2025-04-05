@@ -24,7 +24,7 @@ const navItems = [
   },
   {
     title: "TICKET",
-    url: "/ticket",
+    url: "/tickets",
   },
   {
     title: "STORY BEHIND OUR PROJECT",
@@ -59,7 +59,7 @@ export default function NavSidebar() {
               {navItems.map((item, index) => (
                 <li
                   key={index}
-                  className="w-full place-items-start rounded-sm hover:-translate-x-0.5"
+                  className="w-full place-items-start text-sm text-left rounded-sm hover:-translate-x-0.5"
                   onClick={closeSideBar}
                 >
                   <SidebarButton title={item.title} link={item.url} />
