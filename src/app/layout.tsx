@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
+import ReduxProvider from "@/redux/ReduxProvider";
 import "./globals.css";
 import TopBar from "@/components/top-bar";
 import { Great_Vibes } from "next/font/google";
@@ -37,9 +37,11 @@ export default function RootLayout({
         <link rel="icon" href="/image/logo.png" />
       </head>
       <body className="font-primary">
-        <TopBar />
+        <ReduxProvider>
+          <TopBar />
 
-        {children}
+          {children}
+        </ReduxProvider>
       </body>
     </html>
   );
