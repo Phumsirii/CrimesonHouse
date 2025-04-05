@@ -4,11 +4,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 interface CardProps {
-    description: String
-    name: String
-    imageSrc: string
+  description: string;
+  name: string;
+  imageSrc: string;
 }
-const Card:React.FC<CardProps> = ({description, name, imageSrc}) => {
+const Card: React.FC<CardProps> = ({ description, name, imageSrc }) => {
   const [hovered, setHovered] = useState(false);
   return (
     <div
@@ -24,11 +24,7 @@ const Card:React.FC<CardProps> = ({description, name, imageSrc}) => {
         style={{ transformStyle: "preserve-3d" }}
       >
         <div className="absolute h-full inset-0 w-full backface-hidden text-black">
-          <Image
-            src={imageSrc}
-            alt="Card image"
-            layout="fill"
-          />
+          <Image src={imageSrc} alt="Card image" layout="fill" />
         </div>
 
         <div className="bg-[url('/image/card-bg.jpg')] h-full text-black bg-cover bg-center text-center p-2 absolute inset-0 w-full flex flex-col items-center justify-center bg-gray-800 font-bold rotate-y-180 backface-hidden">
