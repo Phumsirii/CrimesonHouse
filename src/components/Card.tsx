@@ -29,7 +29,6 @@ const Card:React.FC<CardProps> = ({description, name, imageSrc}) => {
             src={imageSrc}
             alt="Card image"
             layout="fill"
-            objectFit="cover"
           />
         </div>
 
