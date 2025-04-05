@@ -29,7 +29,7 @@ export default function Ticket() {
             href="https://shop.line.me/@crimesonhouse"
             rel="noopener noreferrer"
             target="_blank"
-            className="bg-[#E8D1A7] w-[310px]  md:text-lg text-m hover:bg-amber-600 text-black font-bold py-4 px-8 rounded uppercase  tracking-wider transition-colors"
+            className="bg-[#E8D1A7] w-[250px]  md:text-lg text-m hover:bg-amber-600 text-black font-bold py-4 px-8 rounded uppercase  tracking-wider transition-colors"
           >
             สำรองบัตรได้ทาง <br/> Line Shopping
           </Link>   
@@ -37,7 +37,7 @@ export default function Ticket() {
             href="https://lin.ee/Zm0GY3d"
             rel="noopener noreferrer"
             target="_blank"
-            className="bg-[#E8D1A7]  w-[310px] md:text-lg text-m hover:bg-amber-600 text-black font-bold py-4 px-8 rounded uppercase tracking-wider transition-colors"
+            className="bg-[#E8D1A7]  w-[250px] md:text-lg text-m hover:bg-amber-600 text-black font-bold py-4 px-8 rounded uppercase tracking-wider transition-colors"
           >
             สอบถามเพิ่มเติมได้ทาง  <br/> Line OA
           </Link>   

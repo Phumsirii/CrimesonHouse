@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ContactUsPage() {
   return (
-    <div className="bg-[url('/image/bg-statue.png')] text-white bg-cover bg-center h-screen w-screen flex flex-col py-24 lg:px-40 md:px-32 sm:px-20 px-4 space-y-12 lg:space-y-24">
+    <div className="bg-[url('/image/bg-statue.png')] text-white bg-cover bg-center h-screen w-screen flex flex-col py-35 lg:px-40 md:px-32 sm:px-20 px-4 space-y-12 lg:space-y-24">
       <div className="flex justify-center p-2 sm:text-5xl text-3xl font-bold lg:mt-10">
         CONTACT US
       </div>
