@@ -14,7 +14,7 @@ export default function TopBar() {
         />
       </div>
 
-      <ul className="lg:flex justify-center space-x-8 hidden">
+      <ul className="lg:flex justify-center space-x-8 hidden lg:px-6">
         <li>
           <Link
             href="/"
