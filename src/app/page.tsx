@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <section className="w-screen bg-cover bg-center h-screen  py-50 border lg:h-screen lg:border-none lg:bg-cover lg:bg-[position:20%_40%] bg-[url('/image/GFXP0640.jpg')]">
+      <section className="w-screen bg-cover bg-center h-screen  py-50 lg:h-screen lg:border-none lg:bg-cover lg:bg-[position:20%_40%] bg-[url('/image/GFXP0640.jpg')]">
         <div className="flex flex-col items-center h-full justify-center text-center px- ">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-wider">
             CRIM(E)SONE
