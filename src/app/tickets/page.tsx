@@ -11,7 +11,7 @@ export default function Ticket() {
     <div className="min-w-screen min-h-screen flex flex-col py-28 lg:px-40 md:px-16 sm:px-10 px-4 text-[#E8D1A7] bg-[url('/image/red_bg.jpg')] bg-cover">
       <div className="flex flex-col lg:px-8 px-4 w-full h-full justify-start text-center items-center space-y-16 py-10">
         <h1 className="font-bold text-7xl">Ticket</h1>
-        <div className="grid xl:grid-cols-2 grid-rows-2 xl:grid-rows-1 xl:gap-x-8">
+        <div className="grid xl:grid-cols-2 xl:grid-rows-1 xl:gap-x-8">
           <div className="flex justify-center lg:-mt-20">
             <Image
               src="/image/invitation.png"
