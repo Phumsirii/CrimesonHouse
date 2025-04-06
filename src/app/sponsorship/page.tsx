@@ -33,10 +33,10 @@ export default function SponsorshipPage() {
         </div>
         <div className="flex gap-3 flex-wrap justify-center w-full max-w-3xl">
                 {otherSponsors.slice(0,5).map(logo => logo === 'Lactasoy - Logo.jpg' ?  <Image alt = "logo" key = {logo} width= {125} height={125} className="py-4" src={`/image/others/${logo}`} />
-                                                                  :  <Image alt = "logo" key = {logo} width= {125} height={125} className="bg-white" src={`/image/others/${logo}`}/>)}
+                                                                  :  <Image alt = "logo" key = {logo} width= {125} height={125} className="bg-white" src={`/image/Others/${logo}`}/>)}
         </div>
         <div className="flex gap-3 flex-wrap  justify-center items-center">
-                {otherSponsors.slice(5).map(logo => <Image alt = "logo" key = {logo} width= {125} className="bg-white" height={125} src={`/image/others/${logo}`}/>)}
+                {otherSponsors.slice(5).map(logo => <Image alt = "logo" key = {logo} width= {125} className="bg-white" height={125} src={`/image/Others/${logo}`}/>)}
         </div>
       </div>        
   
