@@ -1,13 +1,5 @@
 import Image from "next/image";
-const bronzeSponsors = [
-  "baan film_logo(final)-02.png",
-  "Dr.หมูย่างเมืองตรัง.jpg",
-  "Lastest Logo.png",
-  "ก๋วยเตี๋ยวเรือนายเกรียง.jpg",
-  "ไก่ทอดโทริมารุ.jpg",
-  "เส้นและเส้น.PNG",
-  "อิ่มจังอาหารตามสั่ง.jpg"
-];
+
 
 const championSponsors = [
   "the manor studio.jpeg",
@@ -27,16 +19,6 @@ const otherSponsors = [
   "อิ่มจังอาหารตามสั่ง.jpg",
   "Dr.หมูย่างเมืองตรัง.jpg",
 ]
-
-const platinumSponsors = [
-  "Bakeitbabe.jpg"
-];
-
-const silverSponsors = [
-  "Lactasoy - Logo.jpg",
-  "MariageFreres-TheFrancais-Paris1854-40x40cm-1.png"
-];
-
 
 export default function SponsorshipPage() {
   return (         
