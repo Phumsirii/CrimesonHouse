@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import NavSidebar from "./sidebar";
-import { Icon } from "@iconify/react";
 import { setLanguage } from "@/redux/features/language";
 import { useDispatch } from "react-redux";
 
@@ -74,23 +73,22 @@ export default function TopBar() {
         </li>
       </ul>
 
-      <div className="flex flex-row space-x-4 items-center">
-        <Icon
-          icon={"emojione:flag-for-united-kingdom"}
-          className="size-10"
-          onClick={() => {
-            dispatch(setLanguage("EN"));
-          }}
-        />
-
-        <Icon
-          icon={"emojione:flag-for-thailand"}
-          className="size-10"
-          onClick={() => {
-            dispatch(setLanguage("TH"));
-          }}
-        />
-
+      <div className="flex flex-row space-x-4 items-center text-white text-center">
+        <div className="flex flex-row space-x-2 items-center">
+          <p
+            onClick={() => dispatch(setLanguage("TH"))}
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors text-center"
+          >
+            TH
+          </p>
+          <p> | </p>
+          <p
+            onClick={() => dispatch(setLanguage("EN"))}
+            className="text-white uppercase text-sm font-semibold tracking-wider hover:text-amber-400 transition-colors text-center"
+          >
+            EN
+          </p>
+        </div>
         <NavSidebar />
       </div>
     </div>
