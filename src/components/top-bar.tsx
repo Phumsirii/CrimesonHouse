@@ -13,12 +13,14 @@ export default function TopBar() {
   return (
     <div className=" bg-black/60 z-15 fixed w-full p-2 h-1/10 flex justify-between items-center">
       <div className="mt-4">
-        <Image
-          src="/image/LOGO-t-01.png"
-          alt="CrimesoneHouse Logo"
-          width={120}
-          height={80}
-        />
+        <Link href="/">
+          <Image
+            src="/image/LOGO-t-01.png"
+            alt="CrimesoneHouse Logo"
+            width={120}
+            height={80}
+          />
+        </Link>
       </div>
 
       <ul className="lg:flex justify-center space-x-8 hidden lg:px-6">
@@ -78,7 +80,6 @@ export default function TopBar() {
           className="size-10"
           onClick={() => {
             dispatch(setLanguage("EN"));
-            console.log("EN");
           }}
         />
 
@@ -87,7 +88,6 @@ export default function TopBar() {
           className="size-10"
           onClick={() => {
             dispatch(setLanguage("TH"));
-            console.log("TH");
           }}
         />
 
