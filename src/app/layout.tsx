@@ -34,8 +34,12 @@ export default function RootLayout({
     <html lang="en" className={greatVibes.variable}>
       <head>
         <title>CrimesonHouse</title>
-        <link rel="icon" type="image/png" href="/image/LOGO-t-01.png" />
-      </head>
+        <link
+  rel="icon"
+  href="/icon?<generated>"
+  type="image/<generated>"
+  sizes="<generated>"
+/>      </head>
       <body className="font-primary">
         <ReduxProvider>
           <TopBar />
