@@ -50,7 +50,7 @@ export default function Home() {
           </h3>
           <Link
             href="/tickets"
-            className="bg-amber-700 hover:bg-amber-600 text-black font-bold py-4 px-8 rounded uppercase text-lg tracking-wider transition-colors"
+            className="bg-[#590016] hover:bg-amber-600 text-black font-bold py-4 px-8 rounded uppercase text-lg tracking-wider transition-colors"
           >
             Book Tickets
           </Link>
