@@ -35,11 +35,12 @@ export default function RootLayout({
       <head>
         <title>CrimesonHouse</title>
         <link
-  rel="icon"
-  href="/icon?<generated>"
-  type="image/<generated>"
-  sizes="<generated>"
-/>      </head>
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body className="font-primary">
         <ReduxProvider>
           <TopBar />
