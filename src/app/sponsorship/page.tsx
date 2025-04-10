@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const championSponsors = [
   "the manor studio.jpeg",
-  "YUMYUM LOGO THAI HIRES-R.jpg",
+  "YUMYUM LOGO THAI HIRES-R.png",
   "MizuMi Logo-01.png",
 ];
 
